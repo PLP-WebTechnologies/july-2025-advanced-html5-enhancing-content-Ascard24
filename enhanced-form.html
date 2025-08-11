@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HTML5 example with lists, tables, media, and an accessible validated form." />
+  <meta name="author" content="Your Name" />
+  <title>HTML5 Enhanced Content & Forms</title>
+</head>
+<body>
 
+  <header>
+    <h1>HTML5 Enhanced Content & Form Demo</h1>
+    <p>Demonstrating lists, tables, media, and native HTML5 form validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>My Daily Tasks</h2>
+      <ol>
+        <li>Check emails</li>
+        <li>Write project updates</li>
+        <li>Attend team meeting</li>
+        <li>Work on coding assignments</li>
+      </ol>
+
+      <h3>Shopping List</h3>
+      <ul>
+        <li>Bread</li>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Coffee</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Project Deadlines</h2>
+      <table border="1">
+        <caption>Upcoming Project Deadlines</caption>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Due Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>2025-08-15</td>
+            <td>In Progress</td>
+          </tr>
+          <tr>
+            <td>Blog Redesign</td>
+            <td>2025-09-01</td>
+            <td>Not Started</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Showcase</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Sample Placeholder" />
+        <figcaption>Sample image for demonstration</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample audio playback</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="320">
+          <source src="sample-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample video playback</figcaption>
+      </figure>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required minlength="3" placeholder="John Doe" />
+
+          <br /><br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+          <br /><br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Message Details</legend>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required placeholder="Your subject here" />
+
+          <br /><br />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+
+          <br /><br />
+
+          <label for="category">Inquiry Category:</label>
+          <select id="category" name="category" required>
+            <option value="">--Please choose--</option>
+            <option value="general">General</option>
+            <option value="project">Project Proposal</option>
+            <option value="support">Technical Support</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" /> Subscribe me to the newsletter
+          </label>
+        </fieldset>
+
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Your Name | Built with HTML5</p>
+  </footer>
+
+</body>
+</html>
